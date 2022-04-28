@@ -72,11 +72,11 @@ const Details = () => {
                       </div>
                       {user?.uid === card?.uid && (
                         <div>
-                          <IconButton style={{ fontSize: '0.8em' }} size='large' color='info' onClick={() => navigate(`/update-blog/${card.id}`)} aria-label='share'>
+                          <IconButton style={{ fontSize: '0.8em', color:'green' }} size='medium' onClick={() => navigate(`/update-blog/${card.id}`)} aria-label='share'>
                             <EditIcon fontSize='large' />
                             &nbsp; EDIT &nbsp;
                           </IconButton>
-                          <IconButton style={{ fontSize: '0.8em' }} size='large' color='error' onClick={() => dispatch(deleteBlog(card.id, navigate))} aria-label='share'>
+                          <IconButton style={{ fontSize: '0.8em', color: 'red' }} size='medium'  onClick={() => dispatch(deleteBlog(card.id, navigate))} aria-label='share'>
                             <DeleteIcon fontSize='large' />
                             &nbsp; DELETE &nbsp;
                           </IconButton>

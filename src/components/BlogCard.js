@@ -13,6 +13,7 @@ import { useEffect } from 'react';
 import { getUser} from '../helpers/Functions';
 
 const BlogCard = ({ card }) => {
+  console.log(card.date.toDate().toString().slice(4, 25))
  
   const user = useSelector(state => state.userReducer.user);
  
@@ -52,12 +53,12 @@ const BlogCard = ({ card }) => {
       <Card sx={{ maxWidth: 825 }} style={{borderRadius: '8px'}}>
           <div className='transform'>
           <CardMedia style={{ cursor: 'pointer' }} 
-          height='175' component='img' 
+          height='200' component='img' 
           image={card.imageURL} 
           title={card.title} 
           onClick={showDetail} />
           <CardContent style={{ backgroundColor: '#e7e6f5', 
-          cursor: 'pointer', height: '6rem' }} 
+          cursor: 'pointer', height: '12rem' }} 
           onClick={showDetail}>
             <Typography variant='h5' 
             color='text.primary' mb={2} 
@@ -67,7 +68,7 @@ const BlogCard = ({ card }) => {
             </Typography>
             <Typography variant='body1' color='text.secondary' 
             style={{ font: 'Mullish', fontWeight: '700' }}>
-              {card.date.toDate().toString().slice(4, 15)}
+              {card.date.toDate().toString().slice(4, 21)}
             </Typography>
             <Typography variant='body2'
              color='text.primary' className='line-clamp' 
@@ -86,8 +87,8 @@ const BlogCard = ({ card }) => {
             &nbsp; {card.email} &nbsp;
           </Typography>
         </CardContent>
-        <CardActions disableSpacing /*style={{display : 'flex', justifyContent:'space-between',  }}*/>
-          <IconButton style={{ fontSize: '.8em', cursor: 'pointer' }} size='small' color='error' disabled={!user} onClick={handleLiked} aria-label='add to favorites'>
+        <CardActions disableSpacing style={{display : 'flex', justifyContent:'space-between' }}>
+          <IconButton style={{ fontSize: '0.8em', cursor: 'pointer' }} size='small' color='error' disabled={!user} onClick={handleLiked} aria-label='add to favorites'>
             <Likes card={card} user={user} />
           </IconButton>
           <IconButton style={{ fontSize: '0.8em', cursor: 'pointer' }} size='small' disabled={!user} onClick={e => setOpen(true)} aria-label='comment'>
@@ -95,7 +96,7 @@ const BlogCard = ({ card }) => {
             &nbsp; {card.comments?.length || 0}
           </IconButton>
           <IconButton aria-label="page visited">
-            <VisibilityIcon style={{marginRight:'1px'}} />
+            <VisibilityIcon/>
             <span style={{ fontSize: '0.8em', cursor: 'pointer' }}>
               {card.view?.length || 0}
             </span>

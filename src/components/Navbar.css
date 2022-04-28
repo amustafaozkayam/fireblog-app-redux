@@ -1,14 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo&family=Prompt:wght@100&display=swap');
 
 .title{
-    font-family: 'Cairo', sans-serif;
+    font: 'Cairo', sans-serif;
    
     font-size: 4rem;
     }
 .appbar{
-    background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
-}
+    background-image: linear-gradient(to top, #a7a6cb 0%, #8989ba 52%, #8989ba 100%);}
 .user-name{
-    font-family: 'Prompt', sans-serif;
+    font: 'Prompt', sans-serif;
     font-size: 1.5rem;
 }

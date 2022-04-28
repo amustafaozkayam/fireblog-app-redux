@@ -81,7 +81,7 @@ const Navbar = () => {
               <Avatar
                 alt="Bank Logo"
                 src={özkaya}
-                sx={{ width: { xs: 80, sm: 80, md: 80 }, height: 80, marginTop: { xs: "0.5rem", sm: "0.5rem", md: "0.5rem" } }}
+                sx={{ width: { xs: 50, sm: 60, md: 80 }, height: { xs: 50, sm: 60, md: 80 }, marginTop: { xs: "0.5rem", sm: "0.5rem", md: "0.5rem" } }}
               />
             </NavLink>
           </Typography>
@@ -89,7 +89,6 @@ const Navbar = () => {
             <NavLink to="/" style={{ textDecoration: "none" }}>
               <Typography
               className="title"
-                // style={{ fontFamily: "Permanent Marker" }}
                 variant="h3"
                 sx={{
                   my: 1,

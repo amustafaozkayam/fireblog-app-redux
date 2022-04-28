@@ -9,7 +9,7 @@ import moment from 'moment';
 import React from 'react';
 
 const Comments = ({ comment }) => {
-  // console.log(comment);
+
 
   return (
     <>
