@@ -3,6 +3,8 @@
 
 # Project-011 : FireBlog App (RC-11)
 
+##Live Url : https://fireblogapp-react-redux.netlify.app/register
+
 ## Description
 
 Project aims to create a FireBlog App.
