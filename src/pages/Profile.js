@@ -5,7 +5,7 @@ import image from '../assets/1.jpg';
 
 const Profile = () => {
   const user = useSelector(state => state.userReducer.user);
-  // console.log(user);
+  console.log(user);
 
   return (
     <Grid container alignItems='center' justifyContent='center' mt={10}>
@@ -23,10 +23,10 @@ const Profile = () => {
               {user?.displayName}
             </Typography>
             <Typography gutterBottom variant='h5' component='div' mt={2}>
-              Phone Number
+              Country
             </Typography>
             <Typography variant='body2' color='text.secondary'>
-              {user?.phoneNumber || null}
+              {user?.phoneNumber || '-' }
             </Typography>
             <Typography gutterBottom variant='h5' component='div' mt={2}>
               Email

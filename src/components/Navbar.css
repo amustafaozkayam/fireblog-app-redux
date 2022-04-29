@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo&family=Prompt:wght@100&display=swap');
 
 .title{
-    font: 'Cairo', sans-serif;
-   
+    font: 'Mullish';
     font-size: 4rem;
+    color:white
     }
 .appbar{
     background-image: linear-gradient(to top, #a7a6cb 0%, #8989ba 52%, #8989ba 100%);}

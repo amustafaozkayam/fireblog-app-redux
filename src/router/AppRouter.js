@@ -6,10 +6,11 @@ import Dashboard from '../pages/Dashboard';
 import Details from '../pages/Details';
 import Login from '../pages/Login';
 import NewBlog from '../pages/NewBlog';
-import NotFound from '../pages/NotFound';
+// import NotFound from '../pages/NotFound';
 import Profile from '../pages/Profile';
 import Register from '../pages/Register';
 import UpdateBlog from '../pages/UpdateBlog';
+import Footer from '../components/Footer'
 
 const AppRouter = () => {
   const user = useSelector(state => state.userReducer.user);
@@ -27,6 +28,7 @@ const AppRouter = () => {
         {user && <Route path='/profile/:id' element={<Profile />} />}
         {/* <Route path='*' element={<NotFound />} /> */}
       </Routes>
+      <Footer/>
     </Router>
   );
 };

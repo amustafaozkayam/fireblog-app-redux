@@ -88,13 +88,14 @@ const Navbar = () => {
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "flex" } }}>
             <NavLink to="/" style={{ textDecoration: "none" }}>
               <Typography
-              className="title"
+              // className="title"
                 variant="h3"
                 sx={{
                   my: 1,
                   color: "white",
                   display: { xs: "flex", md: "flex" },
                   fontSize: { xs: "2rem", sm: "2.8rem", md: "3.2rem" },
+                  fontFamily: 'Segoe Ui'
                 }}
               >
                 FireBlog App
