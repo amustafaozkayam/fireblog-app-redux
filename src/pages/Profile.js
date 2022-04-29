@@ -26,7 +26,7 @@ const Profile = () => {
               Country
             </Typography>
             <Typography variant='body2' color='text.secondary'>
-              {user?.phoneNumber || '-' }
+              Turkey
             </Typography>
             <Typography gutterBottom variant='h5' component='div' mt={2}>
               Email
